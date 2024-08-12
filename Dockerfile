@@ -8,4 +8,6 @@ RUN pip install --upgrade pip setuptools wheel
 COPY ./requirements.txt /tmp
 RUN cd /tmp && pip install -r requirements.txt
 COPY . /tmp/
-CMD DB_USERNAME="couser" DB_PASSWORD="copassword" && python app.py
+ENV DB_USERNAME="couser"
+ENV DB_PASSWORD="copassword"
+CMD python app.py
