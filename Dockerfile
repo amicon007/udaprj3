@@ -6,8 +6,5 @@ RUN apt install -y build-essential libpq-dev
 RUN pip install --upgrade pip setuptools wheel
 COPY ./requirements.txt /tmp
 RUN cd /tmp && pip install -r requirements.txt
-COPY *.* /tmp/
-ENV DB_USERNAME="myuserprj3"
-ENV DB_PASSWORD="mypasswordprj3"
-ENV DB_NAME="mydatabaseprj3"
-CMD cd /tmp && python app.py
+COPY . /tmp/
+CMD DB_USERNAME="couser" DB_PASSWORD="copassword" && python app.py
