@@ -16,11 +16,11 @@ spec:
         image: postgres:latest
         env:
         - name: POSTGRES_DB
-          value: mydatabaseprj3
+          value: codatabase
         - name: POSTGRES_USER
-          value: myuserprj3
+          value: couser
         - name: POSTGRES_PASSWORD
-          value: mypasswordprj3
+          value: copassword
         ports:
         - containerPort: 5432
         volumeMounts:

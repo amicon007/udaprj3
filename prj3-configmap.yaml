@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  DB_USERNAME: "myuserprj3"
+  DB_NAME: "mydatabaseprj3"
+  DB_HOST: "postgresql-service" 
+  DB_PORT: "5433"
+metadata:
+  name: prj3-postgresql

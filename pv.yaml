@@ -4,7 +4,7 @@ metadata:
   name: my-manual-pv
 spec:
   capacity:
-    storage: 1Gi
+    storage: 15Gi
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
