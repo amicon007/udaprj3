@@ -10,6 +10,4 @@ COPY *.* /tmp/
 ENV DB_USERNAME="myuserprj3"
 ENV DB_PASSWORD="mypasswordprj3"
 ENV DB_NAME="mydatabaseprj3"
-ENV DB_PORT="5433"
-ENV DB_HOST="127.0.0.1"
 CMD cd /tmp && python app.py
