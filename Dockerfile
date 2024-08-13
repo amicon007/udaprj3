@@ -1,6 +1,5 @@
 FROM python:3.8-slim
 USER root
-
 WORKDIR /tmp
 RUN apt update -y
 RUN apt install -y build-essential libpq-dev
