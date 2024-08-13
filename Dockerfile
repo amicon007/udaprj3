@@ -1,7 +1,6 @@
 FROM python:3.8-slim
 USER root
 WORKDIR /tmp
-RUN chmod 1777 /tmp
 RUN apt update -y
 RUN apt install -y build-essential libpq-dev
 RUN pip install --upgrade pip setuptools wheel
