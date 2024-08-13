@@ -54,8 +54,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: prj3-postgresql
-              key: DB_HOST                                  
-        env:
+              key: DB_HOST                                       
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:

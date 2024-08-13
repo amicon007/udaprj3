@@ -10,4 +10,4 @@ RUN cd /tmp && pip install -r requirements.txt
 COPY . /tmp/
 ENV DB_USERNAME="couser"
 ENV DB_PASSWORD="copassword"
-CMD python app.py
+CMD python app1.py
